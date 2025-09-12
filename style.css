@@ -58,11 +58,47 @@ nav ul li a:hover::after{
     width: 100%;
 
 }
-.header-text{
-    margin-top:20%;
-    font-size: 30px;
+.header-text {
+    margin-top: 20%;
     padding-left: 10%;
+    color: white;
 }
+
+.header-text h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.header-text h2 {
+    font-size: 30px;
+}
+
+.header-text h2 > .animated-text {
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+    overflow: hidden;
+    color: #ff004f;
+    height: 40px; /* adjust this to match one line of text */
+}
+
+.header-text h2 > .animated-text > span {
+    display: block;
+    animation: slide 10s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-50%);
+    }
+}
+
+
+
+
 .header-h1
 {
     font-size: 60px;
@@ -224,6 +260,7 @@ nav ul li a:hover::after{
 .contact-right{
     flex-basis: 80%;
     align-items: end;
+    display:grid
 }
 .contact-left p{
     margin-top: 30px ;
@@ -246,6 +283,18 @@ nav ul li a:hover::after{
 .contact-right form{
     width: 100%;
 }
+    #contact-left {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+}
+
+.contact-right {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+}
+
 .contact-right .btn {
     background-color: #ff004f; 
     color: #fff;               
@@ -260,18 +309,6 @@ nav ul li a:hover::after{
 .contact-right .btn:hover {
     background-color: #00e645;
 }
-#contact-left {
-    flex: 1;
-    max-width: 45%;
-    padding: 20px;
-}
-
-.contact-right {
-    flex: 1;
-    max-width: 50%;
-    padding: 20px;
-}
-
 
 form input,form textarea{
     width: 100%;;
@@ -284,160 +321,7 @@ form input,form textarea{
     font-size: 18px;;
     border-radius: 6px;
 }
-.btn{
-
-}
-
-
-/* -----------------------phone screen only-------------- */
-
-/* ----------- Responsive Design for Phones ----------- */
-@media (max-width: 768px) {
-
-    .container {
-        padding: 10px 5%;
-    }
-
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .logo {
-        width: 100px;
-        margin-bottom: 10px;
-    }
-
-    nav ul {
-        width: 100%;
-        text-align: left;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin: 8px 0;
-    }
-
-    .header-text {
-        margin-top: 30%;
-        font-size: 20px;
-        padding-left: 5%;
-    }
-
-    .header-text h1 {
-        font-size: 28px;
-    }
-
-    #about {
-        padding: 40px 10px;
-    }
-
-    .row {
-        flex-direction: column;
-    }
-
-    .about-col-1, .about-col-2 {
-        flex-basis: 100%;
-        text-align: center;
-    }
-
-    .about-col-1 img {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .about-col-2 h2 {
-        font-size: 32px;
-    }
-
-    .about-col-2 p {
-        font-size: 16px;
-    }
-
-    .tab-titles {
-        justify-content: center;
-        margin: 20px 0;
-        flex-wrap: wrap;
-    }
-
-    .tab-links {
-        margin: 10px;
-        font-size: 16px;
-    }
-
-    .tab-contents ul li {
-        font-size: 16px;
-    }
-
-    .service-list {
-        display: block;
-    }
-
-    .service-list div {
-        margin-bottom: 20px;
-        width: 100%;
-    }
-
-    .portfolio-link {
-        padding: 12px 15px;
-    }
-
-    #contact {
-        padding: 40px 10px;
-        font-size: large;
-    }
-
-    .contact-left, .contact-right {
-        flex-basis: 100%;
-        text-align: center;
-    }
-
-    #social-icon p {
-        font-size: 14px;
-    }
-
-    form input, form textarea {
-        padding: 12px;
-        margin: 10px;
-        font-size: 16px;
-    }
-
-    .contact-right .btn {
-        width: 100%;
-        font-size: 16px;
-        padding: 12px;
-    }
-    @media (max-width: 768px) {
-    .row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #contact-left, .contact-right {
-        max-width: 100%;
-        text-align: center;
-        padding: 10px;
-    }       
-}
-    .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-#contact-left {
-    flex: 1;
-    max-width: 45%;
-    padding: 20px;
-}
-
-.contact-right {
-    flex: 1;
-    max-width: 50%;
-    padding: 20px;
-}
-
+/* Responsive layout for phones and smaller tablets */
 @media (max-width: 768px) {
     .row {
         flex-direction: column;
@@ -449,9 +333,14 @@ form input,form textarea{
         text-align: center;
         padding: 10px;
     }
-}
 
+    #contact-left {
+        margin-bottom: 20px;
+    }
 
+    .contact-right {
+        align-items: center;
+    }
 }
 
 
