@@ -417,10 +417,43 @@ form input,form textarea{
         max-width: 100%;
         text-align: center;
         padding: 10px;
+    }       
+}
+    .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#contact-left {
+    flex: 1;
+    max-width: 45%;
+    padding: 20px;
+}
+
+.contact-right {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact-left, .contact-right {
+        max-width: 100%;
+        text-align: center;
+        padding: 10px;
     }
 }
 
+
 }
+
 
 
 
