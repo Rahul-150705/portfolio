@@ -279,6 +279,124 @@ form input,form textarea{
 
 /* -----------------------phone screen only-------------- */
 
+/* ----------- Responsive Design for Phones ----------- */
+@media (max-width: 768px) {
+
+    .container {
+        padding: 10px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        width: 100%;
+        text-align: left;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 8px 0;
+    }
+
+    .header-text {
+        margin-top: 30%;
+        font-size: 20px;
+        padding-left: 5%;
+    }
+
+    .header-text h1 {
+        font-size: 28px;
+    }
+
+    #about {
+        padding: 40px 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .about-col-1 img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .about-col-2 h2 {
+        font-size: 32px;
+    }
+
+    .about-col-2 p {
+        font-size: 16px;
+    }
+
+    .tab-titles {
+        justify-content: center;
+        margin: 20px 0;
+        flex-wrap: wrap;
+    }
+
+    .tab-links {
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    .tab-contents ul li {
+        font-size: 16px;
+    }
+
+    .service-list {
+        display: block;
+    }
+
+    .service-list div {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .portfolio-link {
+        padding: 12px 15px;
+    }
+
+    #contact {
+        padding: 40px 10px;
+        font-size: large;
+    }
+
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    #social-icon p {
+        font-size: 14px;
+    }
+
+    form input, form textarea {
+        padding: 12px;
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    .contact-right .btn {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+
 
 
 
