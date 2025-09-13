@@ -14,7 +14,7 @@ body{
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url();
+    background-image: url(imagee/123.jpg);
     background-size: cover;
     background-position: right;
 }
@@ -342,6 +342,7 @@ form input,form textarea{
         align-items: center;
     }
 }
+
 
 
 
