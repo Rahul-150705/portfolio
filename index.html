@@ -14,22 +14,15 @@
         <div class="container">
             <nav>
                 <img src="imagee/logo.png" class="logo">
-                <ul class ="sidebar">
-                    <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-x"></i></a></li>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#profile">Profile</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
                 </ul>
-                <ul>
-                    <li class="hidemobile"><a href="#header">Home</a></li>
-                    <li class="hidemobile"><a href="#about">About</a></li>
-                    <li class="hidemobile"><a href="#work">Work</a></li>
-                    <li class="hidemobile"><a href="#profile">Profile</a></li>
-                    <li class="hidemobile"><a href="#contact">Contact</a></li>
-                    <li class="menubutton" onclick="showsidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
       <div class="header-text">
     <h1>Hi, I'm Rahul</h1>
@@ -173,15 +166,16 @@ Outside of coding, I enjoy reading tech blogs, solving coding challenges, and so
     }
 </script>
 <script>
-    function showsidebar()
+    var sidemen=document.getElementById("sidemenu");
+    function openmenu()
     {
-        const sidebar=document.querySelector('.sidebar');
-        sidebar.style.display='flex';
+        sidemen.style.right="0";
     }
-    function hideSidebar(){
-        const sidebar=document.querySelector('.sidebar');
-        sidebar.style.display='none';
+    function closemenu()
+    {
+        sidemen.style.right="-200px";
     }
+    
 </script>
 <script>
   const form = document.forms['submit-to-google-sheet'];
