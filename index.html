@@ -14,12 +14,21 @@
         <div class="container">
             <nav>
                 <img src="imagee/logo.png" class="logo">
-                <ul>
+                <ul class ="sidebar">
+                    <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-x"></i></a></li>
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#profile">Profile</a></li>
                     <li><a href="#contact">Contact</a></li>
+                </ul>
+                <ul>
+                    <li class="hidemobile"><a href="#header">Home</a></li>
+                    <li class="hidemobile"><a href="#about">About</a></li>
+                    <li class="hidemobile"><a href="#work">Work</a></li>
+                    <li class="hidemobile"><a href="#profile">Profile</a></li>
+                    <li class="hidemobile"><a href="#contact">Contact</a></li>
+                    <li onclick="showsidebar()"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
                 </ul>
             </nav>
       <div class="header-text">
@@ -161,6 +170,17 @@ Outside of coding, I enjoy reading tech blogs, solving coding challenges, and so
         }
         element.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    function showsidebar()
+    {
+        const sidebar=document.querySelector('.sidebar')
+        sidebar.style.display='flex';
+    }
+    function hideSidebar(){
+        const sidebar=document.querySelector('.sidebar')
+        sidebar.style.display='none'
     }
 </script>
 <script>
