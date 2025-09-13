@@ -79,10 +79,22 @@ nav ul li a:hover::after{
 .sidebar a{
     width: 100%;
 }
+.menubutton{
+    display: none;
+}
 @media(max-width: 800px){
     .hidemobile{
         display:none;
     }
+    .menubutton{
+    display: none;
+    }
+}
+@media(max-width: 400px){
+    .sidebar{
+        width: 100%;
+    }
+
 }
 .header-text {
     margin-top: 20%;
