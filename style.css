@@ -58,6 +58,32 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+.sidebar{
+    position: fixed;
+    top: 0;
+    display: none;
+    flex-direction: column ;
+    backdrop-filter: blur(10px);
+    background-color: rgb(255, 255, 255,0.2);
+    height: 100vh;
+    width: 250px;
+    box-shadow: -10px 0 10px;
+    align-items: flex-start;
+    right: 0;
+    z-index: 999;
+    justify-content: flex-start; 
+}
+.sidebar li{
+    width: 100%;;
+}
+.sidebar a{
+    width: 100%;
+}
+@media(max-width: 800px){
+    .hidemobile{
+        display:none;
+    }
+}
 .header-text {
     margin-top: 20%;
     padding-left: 10%;
@@ -324,7 +350,7 @@ form input,form textarea{
     border-radius: 6px;
 }
 /* Responsive layout for phones and smaller tablets */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .row {
         flex-direction: column;
         align-items: center;
