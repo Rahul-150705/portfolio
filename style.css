@@ -171,13 +171,13 @@ nav ul li a:hover::after{
 .tab-contents{
     display:none;
 }
-.tab-contents.active-tab{
-    display:block;
-}
+
 .tab-contents.active-tab p{
     padding-left: 20px;
     font-size:medium;
-
+}
+.tab-contents.active-tab{
+    display:block;
 }
 /* -----------service-------- */
 #service{
@@ -343,6 +343,7 @@ form input,form textarea{
         align-items: center;
     }
 }
+
 
 
 
