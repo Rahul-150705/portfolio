@@ -166,15 +166,16 @@ nav ul li a:hover::after{
     color:#95143c;
 }
 .tab-contents ul li br{
-    text-align: center;
+    text-align: right;
+    color: #00e645;
 }
 .tab-contents{
     display:none;
 }
-
 .tab-contents.active-tab p{
     padding-left: 20px;
     font-size:medium;
+
 }
 .tab-contents.active-tab{
     display:block;
@@ -343,8 +344,6 @@ form input,form textarea{
         align-items: center;
     }
 }
-
-
 
 
 
