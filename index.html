@@ -13,20 +13,14 @@
     <div id="header">
         <div class="container">
             <nav>
-    <img src="imagee/logo.png" class="logo">
-    <div class="menu-toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </div>
-    <ul class="nav-links">
-        <li><a href="#header">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#service">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
+                <img src="imagee/logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
       <div class="header-text">
     <h1>Hi, I'm Rahul</h1>
     <h2>I am a <span class="animated-text">
@@ -158,15 +152,6 @@
         document.getElementById(tabname).classList.add("active-tab");
     }
 </script>
-<script>
-    const menu = document.getElementById('mobile-menu');
-    const navLinks = document.querySelector('.nav-links');
-
-    menu.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-</script>
-
 <script>
   const form = document.forms['submit-to-google-sheet'];
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyf8zIfEU2aCZay-jy9k8ZRuXW2d3Xe5-K-boeWWmfCV852fzuDT4BN2Lg1JrWkae5LGA/exec'
