@@ -153,7 +153,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background-color:#ff004f; /* hover colour*/
+    background-color:#ff004f; 
     position: absolute;
     left:0;
     bottom: -8px;
@@ -223,7 +223,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .portfolio-link {
-    background-color: #1a73e8; /* Blue background for "View Project" */
+    background-color: #1a73e8; 
     padding: 15px 20px;
     border-radius: 8px;
     text-align: center;
@@ -238,7 +238,7 @@ nav ul li a:hover::after{
 }
 
 .portfolio-link a:hover {
-    color: #3838ac; /* Hover color */
+    color: #3838ac;
 }
 
 
@@ -338,234 +338,6 @@ form input,form textarea{
         align-items: center;
     }
 }
-/* Responsive layout for phones and smaller tablets */
-@media (max-width: 1024px) {
-    .container {
-        padding: 10px 5%;
-    }
-
-    .logo {
-        width: 180px;
-    }
-
-    nav ul li {
-        margin: 10px 15px;
-        font-size: 16px;
-    }
-
-    .header-text {
-        margin-top: 15%;
-        padding-left: 5%;
-    }
-
-    .header-text h1 {
-        font-size: 36px;
-    }
-
-    .header-text h2 {
-        font-size: 22px;
-    }
-
-    .header-text h2 .animated-text {
-        height: 30px;
-    }
-
-    .header-h1 {
-        font-size: 36px;
-    }
-
-    #about {
-        padding: 40px 20px;
-    }
-
-    .about-col-1 {
-        flex-basis: 100%;
-        text-align: center;
-    }
-
-    .about-col-1 img {
-        width: 80%;
-    }
-
-    .about-col-2 {
-        flex-basis: 100%;
-        margin-top: 20px;
-    }
-
-    .about-col-2 h2 {
-        font-size: 32px;
-    }
-
-    .about-col-2 p {
-        font-size: 16px;
-    }
-
-    .tab-titles {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .tab-links {
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-
-    .service-list {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .service-list div {
-        padding: 20px;
-    }
-
-    .service-list div h3 {
-        font-size: 22px;
-    }
-
-    .service-list div p {
-        font-size: 14px;
-    }
-
-    .portfolio-link {
-        padding: 10px 15px;
-    }
-
-    .portfolio-link a {
-        font-size: 16px;
-    }
-
-    #contact {
-        padding: 40px 20px;
-        font-size: large;
-    }
-}
-
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul {
-        padding: 0;
-        margin: 0;
-    }
-
-    nav ul li {
-        display: block;
-
-        margin: 10px 0;
-    }
-
-    .header-text {
-        margin-top: 10%;
-        padding-left: 5%;
-    }
-
-    .header-text h1 {
-        font-size: 28px;
-    }
-
-    .header-text h2 {
-        font-size: 18px;
-    }
-
-    .header-text h2 .animated-text {
-        height: 25px;
-    }
-
-    .header-h1 {
-        font-size: 28px;
-    }
-
-    #about {
-        padding: 20px 10px;
-    }
-
-    .about-col-1 img {
-        width: 100%;
-    }
-
-    .about-col-2 h2 {
-        font-size: 26px;
-    }
-
-    .about-col-2 p {
-        font-size: 14px;
-    }
-
-    .service-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .service-list div {
-        width: 90%;
-    }
-
-    #contact-left, .contact-right {
-        max-width: 100%;
-        padding: 10px;
-    }
-
-    form input, form textarea {
-        margin: 10px 0;
-        font-size: 16px;
-    }
-
-    .contact-right .btn {
-        width: 100%;
-        padding: 12px 0;
-    }
-}
-/* Hamburger menu styles */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-}
-
-.menu-toggle .bar {
-    height: 3px;
-    width: 25px;
-    background-color: #ed0808;
-    margin: 4px 0;
-    transition: 0.3s;
-}
-
-/* Mobile view adjustments */
-@media (max-width: 768px) {
-    nav {
-        position: relative;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        background-color: #080808;
-        position: absolute;
-        top: 60px;
-        left: 0;
-    }
-
-    .nav-links li {
-        margin: 10px 0;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    /* Show nav when active */
-    .nav-links.active {
-        display: flex;
-    }
-}
-
-
 
 
 
