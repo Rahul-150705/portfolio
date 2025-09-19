@@ -5,25 +5,26 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #080808;
+    background-color: #060606;
     color: #fff;
 }
 body {
     width: 100%;
     height: 100vh;
-    background-image: url("..imagee/123.jpeg");
+    background-image: url("imagee/123.jpeg");
     background-size: cover;       /* makes it cover entire screen */
     background-repeat: no-repeat; /* prevents tiling */
     background-position: center;  /* keeps it centered */
 }
 #header{
-    image-resolution: 100%;
+    image-resolution: 1000%;
 }
 html{
     scroll-behavior: smooth;
 }
 .container{
     padding: 10px 10%;
+    padding-bottom: 30%;
 }
 nav{
     display: flex;
@@ -41,7 +42,7 @@ nav ul li{  /* this is for the home and other buttons to algn horizontally */
     margin: 20px 30px;
 }
 nav ul li a{
-    color: #160e0e;
+    color: #121010;
     text-decoration: none;
     font-size: large;
     position: relative;
@@ -50,7 +51,7 @@ nav ul li a::after{
     width: 0;
     content: '';
     height: 3px;
-    background-color:#010c06; /* hover colour*/
+    background-color:#f9fcfa; /* hover colour*/
     position: absolute;
     left:0;
     bottom: -6px;
@@ -69,16 +70,28 @@ nav .fa-solid{
 .header-text {
     margin-top: 20%;
     padding-left: 10%;
-    color: white;
+    color: rgb(10, 3, 3);
 }
 
 .header-text h1 {
     font-size: 50px;
     margin-bottom: 20px;
+    padding-top:10%;
+    padding-left: 10%;
+    align-items: center;
+    font-weight: 300;   /* thin */
+    font-size: 3rem;    /* adjust size */
+    font-family: 'Poppins', sans-serif;
 }
-
 .header-text h2 {
     font-size: 30px;
+    color: #e5ebe7;
+    padding-left: 10%;
+    padding-bottom: 20%;
+    align-items: center;
+    font-weight: 700;   /* bold/thick */
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .header-text h2 > .animated-text {
@@ -86,12 +99,13 @@ nav .fa-solid{
     position: relative;
     vertical-align: bottom;
     overflow: hidden;
-    color: #ff004f;
+    color: #f7f6f6;
     height: 40px; /* adjust this to match one line of text */
 }
 
 .header-text h2 > .animated-text > span {
     display: block;
+    padding-bottom: 20%;
     animation: slide 10s linear infinite;
 }
 
@@ -109,7 +123,7 @@ nav .fa-solid{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #ff004f;
+    color: #ede9ea;
 }
 #about{
     padding:80px ;
@@ -198,6 +212,10 @@ nav .fa-solid{
     grid-gap: 20px;;
     margin-top:100px;
 }
+h1{
+    padding-left: 5%;
+    color: #f8f9f8;
+}
 .service-list div{
     background: #262626;
     padding: 40px;
@@ -214,6 +232,21 @@ nav .fa-solid{
     font-size: 30px;;
     font-weight: 500;
     margin-bottom: 15px;
+}
+/* .container1{
+    display: flex;
+    width: 400px;
+    height: 340px;
+    gap: 10px;
+} */
+.card{
+    flex: 1;
+    min-width: 70px;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+
 }
 
 .service-list div p{
@@ -335,7 +368,7 @@ form input,form textarea{
 /* Responsive layout for phones and smaller tablets */
 @media only screen and (max-width:600px)
 {
-    #header {
+#header {
     background: url(imagee/1234.jpeg) no-repeat center center;
         background-size: cover; /* This makes the image cover the entire screen */
         width: 100%;
@@ -343,8 +376,7 @@ form input,form textarea{
         animation: gradientBG 15s ease infinite;
         overflow: hidden;
     }
-
- 
+}  
 @keyframes gradientBG{
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
@@ -359,12 +391,10 @@ form input,form textarea{
 }
 .header-text-h1{
     font-size: 30px;
-    padding-left: 40;
 }
 nav .fa-solid{
     display: block;
     font-size: 25px;
-    color: #010c06;
 }
 nav ul {
     background: #d1123f;
@@ -406,16 +436,9 @@ nav ul .fa-solid{
     }
 
     .contact-right {
-        align-items: center;
+        align-items: right;
     }
 }
-
-
-
-
-
-
-
 
 
 
