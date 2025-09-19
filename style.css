@@ -16,8 +16,6 @@ body {
     background-repeat: no-repeat; /* prevents tiling */
     background-position: center;  /* keeps it centered */
 }
-
-}
 #header{
     image-resolution: 100%;
 }
@@ -411,6 +409,7 @@ nav ul .fa-solid{
         align-items: center;
     }
 }
+
 
 
 
